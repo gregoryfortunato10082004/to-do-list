@@ -26,6 +26,9 @@ Uma aplicação de lista de tarefas dinâmica, interativa e visualmente agradáv
 1. Certifique-se de ter o **Node.js** instalado.
 2. Faça o clone deste repositório.
 3. Abra o terminal na pasta do projeto e instale as dependências:
+
    ```bash
    npm install
-   npm run dev
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+     npm run dev
