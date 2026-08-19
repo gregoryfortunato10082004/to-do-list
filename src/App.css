@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Quicksand:wght@500;700&display=swap');
+
+h1{
+  color: #f8fafc;
+  padding-bottom: 15px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.input-tarefa{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #112240 ;
+  border: solid 2px;
+  border-color: #3b82f6;
+  color: #f8fafc;
+  padding: 0 15px;
+  border-radius: 15px;
+  width: 381px;
+  height: 40px;
+  outline: none;
+  
+}
+
+button{
+  background-color: transparent;
+  border: red;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.addTask{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+select{
+  border-radius: 15px;
+  padding: 0 5px;
+  width: 85px;
+  height: 40px;
+  background-color: #112240 ;
+  border: solid 2px;
+  border-color: #3b82f6;
+  color: #f8fafc;
+  outline: none;
+ 
+}
+
+/*mudar cor do png*/
+button img{
+  filter: hue-rotate(-60deg);
+}
+
+.cardPrincipal{
+ 
+  background-color: #112240;
+
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+
+ul{
+  padding: 0;
+}
+
+li{
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: #0a192f;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  gap: 10px;
+  animation: surgir 0.5s ease-in;
+}
+
+.conteudoLista{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+
+
+
+.botaoExcluir{
+  width: 18px ;
+  height: 18px;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  margin-left: auto;
+}
+
+.botaoExcluir:hover{
+transform: scale(1.1);
+
+}
+
+.botaoEditar{
+  width: 18px ;
+  height: 18px;
+  color: white;
+  margin-left: auto;
+  filter: invert();
+}
+.botaoEditar:hover{
+transform: scale(1.1);
+
+}
+
+.deleteOrComplete{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  /* Remove o estilo padrão do navegador */
+  appearance: none;
+  -webkit-appearance: none;
+  
+  /* Define o novo tamanho */
+  width: 20px;
+  height: 20px;
+  
+  /* Estiliza a borda com aquele azul que você já usa */
+  border: 2px solid #3b82f6;
+  border-radius: 4px; /* Deixa os cantos levemente arredondados */
+  background-color: #112240; /* Mesma cor de fundo do seu card */
+  
+  /* Muda o cursor para a mãozinha ao passar o mouse */
+  cursor: pointer; 
+  
+  /* Prepara a caixa para centralizarmos o ícone de 'check' depois */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #3b82f6; /* Preenche a caixa de azul */
+}
+input[type="checkbox"]:checked::after {
+  content: "✔"; /* Adiciona o símbolo */
+  color: #f8fafc; /* Cor branca para contrastar com o fundo azul */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.tag-prioridade{
+  width: 14px;
+  height: 24px;
+
+  padding: 4px 12px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #112240;
+  display: inline-block;
+}
+
+.tag-baixa{background-color: #22c55e;}
+.tag-media{background-color: #ead308;}
+.tag-alta{background-color: #ef4444; color: #f8fafc;}
+
+
+.tarefa-riscada{
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/*ANIMAÇÕES*/
+@keyframes surgir {
+  0% {
+  opacity: 0;
+  }
+  100% {
+   opacity:1;
+  }
+}
